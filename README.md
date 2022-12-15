@@ -19,8 +19,8 @@ graph TD
     G -->|No| H{Valor>200}
     H -->|Si| I(Sumamos cantidad de billetes necesaria hasta que valor<200)
     H -->|No| J{Valor=0}
-    K -->|Si| Z(Resultado)
-    K -->|No| L{Valor>100}
+    J -->|Si| Z(Resultado)
+    J -->|No| K{Valor>100}
 ```
 ##### DIAGRAMA DE CLASES
 
