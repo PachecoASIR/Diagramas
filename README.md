@@ -12,10 +12,9 @@ flowchart LR
     B -->|No| C(Error)
     B -->|Si| D(Seleccionamos billetes)
     C --> A
-    D --> E[Valor>500]
-    E --> F{Decision}
-    F -->|Si| G(Sumamos cantidad de billetes necesaria hasta que valor<500)
-    F --> |No| H[Valor>200]
+    D --> E{Valor>500}
+    E -->|Si| F(Sumamos cantidad de billetes necesaria hasta que valor<500)
+    E -->|No| G[Valor>200]
 ```
 ##### DIAGRAMA DE CLASES
 
