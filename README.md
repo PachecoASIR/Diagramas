@@ -7,7 +7,7 @@
 ##### DIAGRAMA DE FLUJO
 
 ```mermaid
-flowchart
+graph TD
     A(Preguntamos al usuario) -->B(Cantidad aceptada)
     B -->|No| C(Error)
     B -->|Si| D(Seleccionamos billetes)
