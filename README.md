@@ -7,12 +7,11 @@
 ##### DIAGRAMA DE FLUJO
 
 ```mermaid
-sequenceDiagram
-    participant Preguntamos
-    participant CantidadCorrecta
-    participant Billetes
-    CantidadCorrecta->>Billetes: Si
-    CantidadCorrecta->>Preguntamos: No
+flowchart LR
+    A(Preguntamos al usuario) -->B(Cantidad aceptada)
+    B --> C{Decision}
+    C -->|Si| D[Seleccionamos billetes]
+    C -->|No| E[Error]
 ```
 ##### DIAGRAMA DE CLASES
 
