@@ -8,9 +8,11 @@
 
 ```mermaid
 sequenceDiagram
-    participant Preguntamos al usuario
-    participant 
-    Pacheco->>Pepe: Hola Pepe, como estás?
+    participant Preguntamos-usuario
+    participant Cantidad-aceptada
+    participant Selecciona-billetes
+    Cantidad-aceptada->>Selecciona-billetes: Si
+    Cantidad-aceptada->>Preguntamos-usuario: No
     loop Pensando
         Pepe->>Pepe: Lucha con sus pensamientos
     end
