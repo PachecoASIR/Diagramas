@@ -9,14 +9,13 @@
 ```mermaid
 flowchart LR
     A(Preguntamos al usuario) -->B(Cantidad aceptada)
-    B --> C{Decision}
-    C -->|No| D(Error)
+    B -->|No| D(Error)
     C -->|Si| E(Seleccionamos billetes)
-    D --> A
-    E --> F[Valor>500]
-    F --> G{Decision}
-    G -->|Si| H(Sumamos cantidad de billetes necesaria hasta que valor<500)
-    G --> |No| I[Valor>200]
+    C --> A
+    D --> E[Valor>500]
+    E --> F{Decision}
+    F -->|Si| G(Sumamos cantidad de billetes necesaria hasta que valor<500)
+    F --> |No| H[Valor>200]
 ```
 ##### DIAGRAMA DE CLASES
 
