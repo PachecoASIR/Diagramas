@@ -36,7 +36,7 @@ graph TD
     S -->|Si| T(Sumamos cantidad de billetes necesaria hasta que valor<10)
     S -->|No| U{Valor=0}
     U -->|Si| Z(Resultado)
-    U -->|No| V{Valor>10}
+    U -->|No| V{Valor>5}
     V -->|Si| W(Sumamos cantidad de billetes necesaria hasta que valor<5)
     V -->|No| X{Valor=0}
     X --> Z(Resultado)
