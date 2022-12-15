@@ -10,8 +10,8 @@
 flowchart LR
     A(Preguntamos al usuario) -->B(Cantidad aceptada)
     B --> C{Decision}
-    C -->|Si| D[Seleccionamos billetes]
-    C -->|No| E[Error]
+    C -->|No| D[Error]
+    C -->|Si| E[Seleccionamos billetes]
 ```
 ##### DIAGRAMA DE CLASES
 
