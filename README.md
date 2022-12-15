@@ -14,7 +14,9 @@ flowchart LR
     C --> A
     D --> E{Valor>500}
     E -->|Si| F(Sumamos cantidad de billetes necesaria hasta que valor<500)
-    E -->|No| G[Valor>200]
+    E -->|No| G{Valor=0}
+    G -->|Si| Z(Resultado)
+    G -->|No| H{Valor>200}
 ```
 ##### DIAGRAMA DE CLASES
 
