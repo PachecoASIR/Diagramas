@@ -7,11 +7,17 @@
 ##### DIAGRAMA DE FLUJO
 
 ```mermaid
-graph TD;
-    Pedimos cantidad-->Cantidad aceptada;
-    Pedimos cantidad-->Error;
-    Error-->Pedimos cantidad;
-    Cantidad aceptada-->Superior a 500;
+sequenceDiagram
+    participant Preguntamos al usuario
+    participant 
+    Pacheco->>Pepe: Hola Pepe, como estás?
+    loop Pensando
+        Pepe->>Pepe: Lucha con sus pensamientos
+    end
+    Note right of Pepe: Pensamientos racionales <br/>Prevalecen!
+    Pepe-->>Pacheco: Bien!
+    Pepe->>Pacheco: Y tu que tal?
+    Pacheco-->>Pepe: Mejor ni hablemos!
 ```
 ##### DIAGRAMA DE CLASES
 
