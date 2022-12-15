@@ -9,8 +9,8 @@
 ```mermaid
 flowchart LR
     A(Preguntamos al usuario) -->B(Cantidad aceptada)
-    B -->|No| D(Error)
-    C -->|Si| E(Seleccionamos billetes)
+    B -->|No| C(Error)
+    B -->|Si| D(Seleccionamos billetes)
     C --> A
     D --> E[Valor>500]
     E --> F{Decision}
