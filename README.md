@@ -8,18 +8,11 @@
 
 ```mermaid
 sequenceDiagram
-    participant Preguntamos-usuario
-    participant Cantidad-aceptada
-    participant Selecciona-billetes
-    Cantidad-aceptada->>Selecciona-billetes: Si
-    Cantidad-aceptada->>Preguntamos-usuario: No
-    loop Pensando
-        Pepe->>Pepe: Lucha con sus pensamientos
-    end
-    Note right of Pepe: Pensamientos racionales <br/>Prevalecen!
-    Pepe-->>Pacheco: Bien!
-    Pepe->>Pacheco: Y tu que tal?
-    Pacheco-->>Pepe: Mejor ni hablemos!
+    participant Preguntamos
+    participant CantidadCorrecta
+    participant Billetes
+    CantidadCorrecta->>Billetes: Si
+    CantidadCorrecta->>Preguntamos: No
 ```
 ##### DIAGRAMA DE CLASES
 
