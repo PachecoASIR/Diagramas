@@ -12,6 +12,7 @@ flowchart LR
     B --> C{Decision}
     C -->|No| D[Error]
     C -->|Si| E[Seleccionamos billetes]
+    D --> A
 ```
 ##### DIAGRAMA DE CLASES
 
