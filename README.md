@@ -8,10 +8,10 @@
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    Pedimos cantidad-->Cantidad aceptada;
+    Pedimos cantidad-->Error;
+    Error-->Pedimos cantidad;
+    Cantidad aceptada-->Superior a 500;
 ```
 ##### DIAGRAMA DE CLASES
 
