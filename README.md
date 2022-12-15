@@ -6,14 +6,6 @@
 
 ##### DIAGRAMA DE FLUJO
 
-Para realizar un **diagrama** emplearemos * *mermaid* *.
-La documentación de mermaid se encuentra en el siguiente [enlace](https://mermaid-js.github.io/mermaid/#/).
-
-##### Requisitos:
-
-- [X] Tener una cuenta de GitHub
-- [ ] Emplear un editor de textos
-
 ```mermaid
 graph TD;
     A-->B;
@@ -21,9 +13,7 @@ graph TD;
     B-->D;
     C-->D;
 ```
-```
-#####DIAGRAMA DE CLASES
-```
+##### DIAGRAMA DE CLASES
 
 ```mermaid
 sequenceDiagram
