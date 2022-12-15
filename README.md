@@ -9,8 +9,8 @@
 ```mermaid
 graph TD
     A(Preguntamos al usuario) -->B(Cantidad aceptada)
-    B -->|No| D(Error)
     B -->|Si| C(Seleccionamos billetes)
+    B -->|No| D(Error)
     D --> A
     C --> E{Valor>500}
     E -->|Si| F(Sumamos cantidad de billetes necesaria hasta que valor<500)
