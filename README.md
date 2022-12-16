@@ -98,17 +98,14 @@ graph TD
 ```mermaid
 classDiagram
   direction RL
-  class Student {
-    -idCard : IdCard
+  class Ejercicio5 {
+    -p : String []
+    -p1 : String []
+    -p2 : String []
+    -p3 : String []
+    -p4 : String []
+    -n1 : Double []
+    -n2 : Double []
+    -resultado : Double []
   }
-  class IdCard{
-    -id : int
-    -name : string
-  }
-  class Bike{
-    -id : int
-    -name : string
-  }
-  Student "1" --o "1" IdCard : carries
-  Student "1" --o "1" Bike : rides
 ```
