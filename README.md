@@ -45,6 +45,7 @@ graph TD
 
 ```mermaid
 classDiagram
+    note "From Duck till Zebra"
     Animal <|-- Duck
     note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
     Animal <|-- Fish
