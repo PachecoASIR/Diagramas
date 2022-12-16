@@ -46,19 +46,12 @@ graph TD
 ```mermaid
 classDiagram
   direction RL
-  class Student {
-    -idCard : IdCard
+  class Main {
+    -cantidad_usuario : int
+    -valor_billete : int
+    -cantidad_billetes: int
+    -mensaje: String []
   }
-  class IdCard{
-    -id : int
-    -name : string
-  }
-  class Bike{
-    -id : int
-    -name : string
-  }
-  Student "1" --o "1" IdCard : carries
-  Student "1" --o "1" Bike : rides
 ```
 
 ### DIAGRAMAS DEL EJERCICIO FIGURAS GEOMÉTRICAS
@@ -103,15 +96,19 @@ graph TD
 ##### DIAGRAMA DE CLASES
 
 ```mermaid
-sequenceDiagram
-    participant Pacheco
-    participant Pepe
-    Pacheco->>Pepe: Hola Pepe, como estás?
-    loop Pensando
-        Pepe->>Pepe: Lucha con sus pensamientos
-    end
-    Note right of Pepe: Pensamientos racionales <br/>Prevalecen!
-    Pepe-->>Pacheco: Bien!
-    Pepe->>Pacheco: Y tu que tal?
-    Pacheco-->>Pepe: Mejor ni hablemos!
+classDiagram
+  direction RL
+  class Student {
+    -idCard : IdCard
+  }
+  class IdCard{
+    -id : int
+    -name : string
+  }
+  class Bike{
+    -id : int
+    -name : string
+  }
+  Student "1" --o "1" IdCard : carries
+  Student "1" --o "1" Bike : rides
 ```
