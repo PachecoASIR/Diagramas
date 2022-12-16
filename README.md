@@ -66,18 +66,16 @@ graph TD
     D --> A
     C --> E{Suma}
     E -->|Si| F(Sumamos cantidad de billetes necesaria hasta que valor<500)
-    E -->|No| G{Valor=0}
+    E -->|No| G{Resta}
     G -->|Si| Z(Resultado)
     G -->|No| H{Resta}
     H -->|Si| I(Sumamos cantidad de billetes necesaria hasta que valor<200)
-    H -->|No| J{Valor=0}
+    H -->|No| J{Multiplicación}
     J -->|Si| Z(Resultado)
     J -->|No| K{Multiplicación}
     K -->|Si| L(Sumamos cantidad de billetes necesaria hasta que valor<100)
-    K -->|No| M{Valor=0}
-    M -->|Si| Z(Resultado)
-    M -->|No| N{División}
-    N --> Z(Resultado)
+    K -->|No| M{División}
+    M --> Z(Resultado)
 ```
 ##### DIAGRAMA DE CLASES
 
