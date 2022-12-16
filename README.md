@@ -44,17 +44,29 @@ graph TD
 ##### DIAGRAMA DE CLASES
 
 ```mermaid
-sequenceDiagram
-    participant Pacheco
-    participant Pepe
-    Pacheco->>Pepe: Hola Pepe, como estás?
-    loop Pensando
-        Pepe->>Pepe: Lucha con sus pensamientos
-    end
-    Note right of Pepe: Pensamientos racionales <br/>Prevalecen!
-    Pepe-->>Pacheco: Bien!
-    Pepe->>Pacheco: Y tu que tal?
-    Pacheco-->>Pepe: Mejor ni hablemos!
+classDiagram
+    note "From Duck till Zebra"
+    Animal <|-- Duck
+    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+        +String beakColor
+        +swim()
+        +quack()
+    }
+    class Fish{
+        -int sizeInFeet
+        -canEat()
+    }
+    class Zebra{
+        +bool is_wild
+        +run()
+    }
 ```
 
 ### DIAGRAMAS DEL EJERCICIO FIGURAS GEOMÉTRICAS
